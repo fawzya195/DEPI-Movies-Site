@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigh up</title>
+       <!-- bootstrap fail -->
+       <link rel="stylesheet" href="style/bootstrap.min.css">
+       <!-- fontawsent fail -->
+        <link rel="stylesheet" href="style/all.min.css">
+       <!-- style fail -->
+        <link rel="stylesheet" href="style/style.css">
+  
+</head>
+<body class="log-page">
+      <!-- Start Navbar -->
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Movies Website</a>
+            <div class=" justify-content-end" id="navbarMenu">
+                <div class="d-flex flex-column flex-lg-row align-items-center">
+        
+                    <a class="btn btn-danger  m-2" href="login.html" id="login/out-btn" >Log in</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+   </header>
+    <!-- End Navbar -->
+
+    <!-- start sighnup form -->
+       <form class=" m-auto col-md-6 loginform pb-5 " id="form"  action="index.html" onsubmit="return  validate()"  > 
+        <div class="form-group">
+            <h2 class="fw-bold mb-5 text-uppercase text-capitalize text-center  ">Create Account</h2>
+            <p id="error" class="text-danger"></p>
+          <label for="signupEmail">Email address</label>
+          <input name="email" required type="email" class="form-control " id="signupEmail" aria-describedby="emailHelp">
+        </div>
+        <div class="form-group mb-5">
+          <label for="signupPassword">Password</label>
+          <input required type="password" class="form-control" id="signupPassword" name="pass" minlength="8">
+        </div>
+        <div class="form-group mb-5">
+          <label for="confirmPassword">Reseat Password</label>
+          <input required type="password" class="form-control" id="confirmPassword" name="reseat-pass" minlength="8">
+        </div>
+        
+        <button type="submit" class="btn btn-outline-danger px-5 py-2 ">Sign Up</button>
+              <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+              </div>
+
+            </div>
+
+            <div>
+              <p class="mb-0 mt-3 text-center">Do have an account? <a href="login.html" target="_blank" class="text-white-50 fw-bold">Log In</a>
+              </p>
+            </div>
+      </form>
+    <!-- end sighnup form -->
+     
+    
+    
+    <!-- bootstrap js fail -->
+  <script src="javascript/jquery.slim.min.js"></script>
+  <script src="javascript/popper.min.js"></script>
+  <script src="javascript/bootstrap.min.js"></script>
+  <!-- fontawsent js fail -->
+   <script src="javascript/all.min.js"></script>
+    <!-- js main fail -->
+     <script src="javascript/main.js"></script>
+</body>
+
+</html>

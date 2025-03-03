@@ -1,0 +1,266 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box
+}
+body{
+    background-color: black;
+}
+
+/* start home page  */
+/* start navbar */
+.navbar{
+    position: fixed;
+    padding: 5px;
+    width: 100%;
+    z-index: 100;
+    font-weight: 400;
+    background-color: rgba(19, 12, 12, 0.829) !important;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.606);
+   
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: 500;
+    color: red !important;
+}
+.navbar .btn{
+    border: none;
+    font-size: 20px ;
+    font-weight: 500;
+      border-radius: 50px;
+      padding: 5px 20px;
+}
+
+/* end navbar */
+
+/* start search part */
+.form-search input
+{
+    background-color: transparent;
+    border: 2px solid rgba(255, 0, 0, 0.555);
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color:#fff;
+    font-family: inherit; 
+}
+.form-search input:focus{
+    outline: 0;
+    background-color:aliceblue;
+    border:none;
+}
+/* start search part */
+
+/* start main section */
+main{
+    margin-bottom: 100px;
+    /* animate__backInUp */
+}
+.carousel-indicators li{
+    width:15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.carousel-caption{
+    top: 30%;
+    position: absolute;
+    left:10%;
+    bottom:0;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+   text-align: left;
+ 
+}
+.carousel-caption button{
+    font-size: 1.5vw;
+    transition: 0.3s;
+    border:none;
+    border-radius: 50px;
+    padding: 1vw ;
+}
+.carousel-caption a{
+    text-decoration: none;
+    color:#fff;
+}
+.carousel-caption h1{
+    font-size: 4vw ;
+    font-weight: 700;
+} 
+.carousel-caption p{
+    font-size: 2vw;
+}
+@media (max-width: 768px) {
+    .carousel-caption{
+        top:25%;
+       }
+    
+
+    .carousel-caption h1 {
+        font-size: 6vw; /* تصغير حجم العنوان */
+    }
+
+    .carousel-caption p {
+        font-size: 3.5vw; /* تصغير حجم الفقرة */
+    }
+
+    .carousel-caption button {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+}
+/* end main section */
+
+/* satrt movies section */
+.card{
+    position: relative;
+    cursor: pointer;
+    overflow:hidden;
+   border: none;
+}
+.card-body{
+    font-size: 20px;
+    color:#fff;
+    background-color: black;
+}
+
+.overview{
+    position:absolute;
+    overflow: auto;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 5px;
+    background-color: #000000d5;
+    padding: 10px;
+    transform:translateY(101%);
+    transition:transform 0.3s ease-in;
+    color:#fff;
+    display:flex;
+   flex-direction: column;
+    justify-content:center;
+  align-items:center;
+  
+}
+.card:hover .overview{
+    transform: translateY(0);
+}
+.overview p:nth-of-type(1){
+    font-weight: 600;
+    font-size: 20px;
+}
+/* end movies section */
+
+
+/* start footer */
+footer{
+    height: 300px;
+    color:#fff;
+    padding: 20px;
+    font-size: 20px;
+   
+}
+footer a{
+    color: red;
+}
+footer a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+/* end of home page */
+
+
+/* start log in page */
+ .log-page{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/04ef06cc-5f81-4a8e-8db0-6430ba4af286/web/EG-en-20250224-TRIFECTA-perspective_928c688e-939a-402e-a8cf-a219844b9522_medium.jpg);
+     background-size: cover;
+      background-repeat: no-repeat;
+       background-position: center center,;
+       background-attachment:fixed;
+        background-size:cover;
+}
+.loginform{
+   border: none;
+   background-color: #000000d3;
+    position: absolute;
+    top:50%;
+    left:50%;   
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    padding: 20px;
+
+   
+}
+label{
+    font-size: 22px;
+    color: #fff;
+    
+}
+.loginform h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size:40px;
+    color:#fff !important;
+    
+}
+.loginform input{
+    height:50px;
+    background-color: transparent;
+   color: #fff !important;
+}
+.loginform input:focus{
+    outline:  red solid 2px;
+    background-color: transparent;
+}
+.loginform button{
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin: auto !important;
+    
+} 
+.loginform p{
+    color: #fff !important;
+}
+.loginform a,p{
+    font-size: 18px;
+}
+.loginform a:hover{
+    color:red !important;
+    text-decoration: none;
+}
+#error , #loginError{
+    color:red !important;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    .loginform{
+       top:70%;
+       }
+}
+/* end log in page */
+
+
+/* start movie details page */
+.movie-card{
+    padding-top: 120px;
+  }
+.movie-card p{
+  color:white;
+  width: 100%;
+}
+.movie-card strong{
+    color: red;
+    margin-right: 5px;
+    letter-spacing: 1px;
+}
+.movie-card h2{
+    color:red;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500px;
+}
+/* end movie details page */
