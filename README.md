@@ -1,6 +1,3 @@
-Here's a well-structured `README.md` file in English:  
-
----
 
 # 🎬 DEPI Movies Site  
 
