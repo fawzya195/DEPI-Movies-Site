@@ -12,10 +12,13 @@
 - 📱 Fully responsive design for all devices.  
 
 ## 🛠️ Tech Stack  
-- **Frontend:** HTML, CSS, JavaScript, React.js (if applicable).  
-- **Backend:** Node.js, Express.js (if applicable).  
-- **Database:** MongoDB / Firebase (if applicable).  
-- **API:** [Specify the API used to fetch movie data, e.g., TMDb API].  
+Languages & Technologies: HTML, CSS, JavaScript, Bootstrap
+
+Libraries & Frameworks: React.js (for UI components and state management), Node.js (for backend logic), Express.js (for handling API requests)
+
+API Used: TMDb API (for fetching movie data, including details, genres, and search results)
+
+Storage & Authentication: Local Storage & Session Storage (for managing user authentication and preferences)
 
 ## 📂 Installation & Setup  
 1. **Clone the Repository:**  
