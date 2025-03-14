@@ -18,9 +18,4 @@ A dynamic movie discovery platform using **TMDb API** with **filtering, sorting,
 - **API:** Fetch API (TMDb)  
 - **Storage:** localStorage (user data), sessionStorage (session)  
 
-## 🔥 Challenges & Improvements
 
-⚡ API rate limits & smooth UI updates  
-⚡ Future: **password hashing, backend authentication, watchlist & favorites**  
-
-📩 **Let's Connect & Improve It Together!** 🚀
